@@ -3,16 +3,102 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <script type="module" defer src="/src/main.ts"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
 
-  <title>Vite + TS</title>
+  <script type="module" defer src="/src/main.ts"></script>
+  <script defer src="https://unpkg.com/phosphor-icons"></script>
+
+  <title>Toast Notification</title>
 </head>
 
 <body>
-  <main></main>
+  <main>
+    <div class="buttons-container">
+      <button data-element="toast-button" id="success" class="success">
+        Show success toast
+      </button>
+
+      <button data-element="toast-button" id="fail" class="fail">
+        Show fail toast
+      </button>
+
+      <button data-element="toast-button" id="warning" class="warning">
+        Show warning toast
+      </button>
+
+      <button data-element="toast-button" id="help" class="help">
+        Show help toast
+      </button>
+    </div>
+
+    <div data-element="toast" id="success" class="toast success">
+      <div class="icon-container">
+        <img src="/success-icon.svg" alt="">
+      </div>
+
+      <div class="content">
+        <h3>Well done!</h3>
+
+        <p>You successfully read this important message.</p>
+      </div>
+
+      <button>
+        <i class="ph-x"></i>
+      </button>
+    </div>
+
+    <div data-element="toast" id="fail" class="toast fail">
+      <div class="icon-container">
+        <img src="/fail-icon.svg" alt="">
+      </div>
+
+      <div class="content">
+        <h3>Oh snap!</h3>
+
+        <p>Change a few things up and try submitting again.</p>
+      </div>
+
+      <button>
+        <i class="ph-x"></i>
+      </button>
+    </div>
+
+    <div data-element="toast" id="warning" class="toast warning">
+      <div class="icon-container">
+        <img src="/warning-icon.svg" alt="">
+      </div>
+
+      <div class="content">
+        <h3>Warning!</h3>
+
+        <p>Sorry! There was a problem with your request.</p>
+      </div>
+
+      <button>
+        <i class="ph-x"></i>
+      </button>
+    </div>
+
+    <div data-element="toast" id="help" class="toast help">
+      <div class="icon-container">
+        <img src="/question-icon.svg" alt="">
+      </div>
+
+      <div class="content">
+        <h3>Hi there!</h3>
+
+        <p>Do you have a problem? Just use this contact form.</p>
+      </div>
+
+      <button>
+        <i class="ph-x"></i>
+      </button>
+    </div>
+  </main>
 </body>
 
 </html>

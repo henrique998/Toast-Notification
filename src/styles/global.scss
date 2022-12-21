@@ -2,11 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 :root {
     --background: #FFFFFF;
-    --text: #000000;
+
+    --green: #4EC33D;
+    --red: #FC2E20;
+    --yellow: #F88F01;
+    --blue: #65ACF0;
 }
 
 :focus {
@@ -24,7 +29,7 @@ textarea,
 button {
     font-weight: 400;
     font-size: 1rem;
-    color: var(--text);
+    color: var(--background);
 }
 
 a {
